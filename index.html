@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM AddEventListener Hands On Activity 1</title>
+
+    <style>
+        h1 {
+            color: rebeccapurple;
+            display: inline-block;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 8px solid ;
+            border-style: dotted;
+            border-radius: 3px;
+            margin-bottom: 10%;
+            
+        
+        }
+        button {
+            padding: 10px;
+            background-color: aqua;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            border-style: initial;
+            border-radius: 5px;
+            margin: 5px;
+            border: 2.5px;
+           
+        }
+        
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: pink;
+            text-align: center;
+
+           
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>JavaScript AddEventListener() Hands-On</h1>
+
+    <button id="Btn1">Button 1</button>
+    <button id="Btn2">Button 2</button>
+    <button id="Btn3">Button 3</button>
+
+    <script>
+        document.getElementById("Btn1").addEventListener("click", myFunction1);
+        document.getElementById("Btn2").addEventListener("click", myFunction2);
+        document.getElementById("Btn3").addEventListener("click", myFunction3);
+
+        function myFunction1() {
+            alert("Button 1 was clicked");
+            
+        }
+
+        function myFunction2() {
+            alert("Button 2 was clicked");
+        }
+
+        function myFunction3() {
+            alert("Button 3 was clicked");
+        }
+
+        
+
+    </script>
+</body>
+</html>
